@@ -36,10 +36,10 @@ public class MainApp {
                     break;
                 case 5:
                     DataManager.saveData(galaxies, dataFile);
-                    System.out.println("اطلاعات با موفقیت ذخیره شد!");
+                    System.out.println("داده با موفقیت ذخیره شد!");
                     break;
                 default:
-                    System.out.println("انتخاب نامعتبر.");
+                    System.out.println("کد نامعتبر.");
             }
         } while (choice != 5);
     }
@@ -76,7 +76,7 @@ public class MainApp {
         } else if (typeInput.equalsIgnoreCase("گازی") || typeInput.equalsIgnoreCase("Gas")) {
             type = PlanetType.GAS;
         } else {
-            System.out.println("نوع سیاره نامعتبر است. باید 'سنگی' یا 'گازی' باشد.");
+            System.out.println("نوع سیاره نامعتبر است. باید لطفا مقدار معتبر وارد نمائید.");
             return;
         }
 
